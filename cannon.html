@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cannon Game</title>
+    <style type="text/css">
+        canvas{
+            border: 2px solid black;
+            background-color: blanchedalmond;
+            
+        }
+        div{
+            margin: 2% 45% ;
+            
+        }
+        
+        input[type="button"]{
+            width:100%;
+            height: 50px;
+            background-color:lightgreen;
+            border: 4px solid lightgreen;
+            border-radius: 100px;
+            padding: 5px 6px;
+            font-size: x-large;
+            cursor: pointer;
+        }
+    </style>
+    <script src = "cannon.js"></script>
+</head>
+<body>
+    <audio id = "blockersound" preload="auto">
+        <source src="blocker_hit.mp3" type="audio/mpeg">
+    </audio>
+    <audio id = "targetsound" preload = "auto">
+        <source src = "target_sound.mp3" type = "audio/mpeg">
+    </audio>
+    <canvas id="canvas" width = "1515" height="600" style="background-image: url('./backgroundimage.jpeg');"></canvas>
+    <div class="start_game">
+        <p><input id="startbutton" type = "button" value="startgame"></p>
+    </div>
+
+</body>
+</html>
